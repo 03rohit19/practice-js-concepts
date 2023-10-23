@@ -119,3 +119,11 @@ function covertToCamelCase(varible) {
 
 const upperCaseVariables = array.map(covertToCamelCase);
 console.log(upperCaseVariables);
+
+/// entries and for of loop combination
+let school = { apple: 8, orange: 7, pear: 5 };
+const entries = Object.entries(school);
+
+for (let [name, value] of entries) {
+  console.log(`${name},${value}`);
+}
